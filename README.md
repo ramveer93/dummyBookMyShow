@@ -146,7 +146,7 @@ here we are trying to book three seats A0, A1 and A2.
 - If we try to book the seats which are not available , user will get appropriate error msg 
 
 # Authorization
-- Do authorize the APIs , we have to un comment line 58 of SecurityConfig.java , this will start authenticating all the end points except /v1/token and /v1/addUser
+- To authorize the APIs , we have to un comment line 58 of SecurityConfig.java , this will start authenticating all the end points except /v1/token and /v1/addUser
 ```java
 .anyRequest().authenticated().and().exceptionHandling()
 ```
