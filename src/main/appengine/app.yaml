@@ -1,0 +1,7 @@
+runtime: java
+env: flex
+readiness_check:
+  app_start_timeout_sec: 800
+handlers:
+- url: /.*
+  script: this field is required, but ignored
