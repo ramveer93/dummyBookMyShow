@@ -44,17 +44,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests()
-		        .antMatchers("/v1/**").permitAll()
+		      //  .antMatchers("/v1/**").permitAll()
 		       // .antMatchers("/api").permitAll()
 				.antMatchers("/swagger-ui.html").permitAll()
 				.antMatchers("/v1/token").permitAll()
+				.antMatchers("/v1/addUser").permitAll()
 				.antMatchers("/css/**").permitAll()
 				 .antMatchers("/js/**").permitAll()
 				 .antMatchers("/favicon.ico").permitAll()
 				 
 				 //TODO : uncomment below line if you want to authenticate
 				// .antMatchers("/v1/**").hasIpAddress(ip)
-				//.anyRequest().authenticated().and().exceptionHandling()
+				.anyRequest().authenticated().and().exceptionHandling()
 				.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 	}
