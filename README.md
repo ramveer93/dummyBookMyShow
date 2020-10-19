@@ -147,6 +147,7 @@ here we are trying to book three seats A0, A1 and A2.
 
 # Authorization
 - To authorize the APIs , we have to un comment line 58 of SecurityConfig.java , this will start authenticating all the end points except /v1/token and /v1/addUser
+https://github.com/ramveer93/dummyBookMyShow/blob/c9f8b8815280dd375faa5ac1a071fa71eda04c82/src/main/java/com/dummy/bookmyshow/security/SecurityConfig.java#L58
 ```java
 .anyRequest().authenticated().and().exceptionHandling()
 ```
