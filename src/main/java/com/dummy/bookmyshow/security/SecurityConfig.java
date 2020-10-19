@@ -55,7 +55,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 				 
 				 //TODO : uncomment below line if you want to authenticate
 				// .antMatchers("/v1/**").hasIpAddress(ip)
-				.anyRequest().authenticated().and().exceptionHandling()
+				//.anyRequest().authenticated().and().exceptionHandling()
 				.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 	}
