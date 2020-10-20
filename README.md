@@ -1,9 +1,7 @@
 # How to setup
 
-    - Git clone
-  
   ```git
-  https://github.com/ramveer93/dummyBookMyShow.git
+  git clone https://github.com/ramveer93/dummyBookMyShow.git
   ```
   ```mvn
   mvn clean install
