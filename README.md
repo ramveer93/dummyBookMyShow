@@ -1,4 +1,7 @@
 # How to setup
+
+    - Git clone
+  
   ```git
   https://github.com/ramveer93/dummyBookMyShow.git
   ```
