@@ -152,5 +152,7 @@ https://github.com/ramveer93/dummyBookMyShow/blob/c9f8b8815280dd375faa5ac1a071fa
 ```java
 .anyRequest().authenticated().and().exceptionHandling()
 ```
+# License 
+MIT
 
 
